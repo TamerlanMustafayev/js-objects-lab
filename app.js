@@ -58,3 +58,19 @@ pokemon.forEach(starterPokemon => {
 
 game.party.push(starterPokemonsArray[0]) // 0 because I am only picking one pokemon that is starter
 // console.log(game.party)
+
+
+
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+game.party.push(pokemon[1], pokemon[2])
+
+console.log(game.party)
+
