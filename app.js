@@ -215,11 +215,6 @@ game.catchPokemon(pokemon[88])
 console.log(game.party, game.items)
 
 
-
-
-
-
-
 /*
 Exercise 12
 1. Similar to Exercise 6, now complete gyms with a difficulty below 6. How will you approach this?
@@ -227,7 +222,6 @@ Exercise 12
 
 Solve Exercise 12 here:
 */
-console.log('hello', game)
 
 game.gyms.forEach(property => {
   if (property.difficulty < 6) {
@@ -235,7 +229,50 @@ game.gyms.forEach(property => {
   }
 })
 
-console.log('hi', game.gyms)
+
+
+/*
+Exercise 13
+1. Create a `gymStatus` method in `game` to tally completed and incomplete gyms.
+2. How will you iterate through the `gyms` array and update the tally? Remember to log the final tally.
+
+This method should:
+  - Not accept any arguments.
+  - Initially create a constant `gymTally`, which is an object that has two 
+    properties: `completed` and `incomplete`, both of which are initially set to 0.
+
+  - Iterate through the objects in the `game.gyms` array and update the 
+    properties on `gymTally` as follows: 
+    - `completed` should count how many gyms in the array have a value of `true` 
+      for their `completed` property. 
+    - `incomplete` should count how many gyms in the array have a value of 
+      `false` for their `completed` property.
+  - Log the value of `gymTally`.
+  - The method should not return anything.
+
+For example, if five gym objects have a value of `true` on their `completed` property and three gym objects have a value of `false` on their `completed` property, the logged value would be: `{ completed: 5, incomplete: 3 }`.
+
+Solve Exercise 13 here:
+*/
+
+game.gymStatus = () => {
+  const gymTally = {
+    completed: 0, 
+    incomplete: 0
+  }
+  game.gyms.forEach(gym => {
+  if (gym.completed) {
+    gymTally.completed += 1
+  } else if (!gym.completed) {
+    gymTally.incomplete+=1
+  }
+}) 
+console.log( gymTally)
+console.log( gymTally)
+}
+
+game.gymStatus()
+
 
 
 
