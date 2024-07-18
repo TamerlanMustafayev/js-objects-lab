@@ -220,4 +220,22 @@ console.log(game.party, game.items)
 
 
 
+/*
+Exercise 12
+1. Similar to Exercise 6, now complete gyms with a difficulty below 6. How will you approach this?
+ (change the value of `complete` in the qualifying objects from false to true).
+
+Solve Exercise 12 here:
+*/
+console.log('hello', game)
+
+game.gyms.forEach(property => {
+  if (property.difficulty < 6) {
+    property.completed = true
+  }
+})
+
+console.log('hi', game.gyms)
+
+
 
