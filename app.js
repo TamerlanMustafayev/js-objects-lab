@@ -19,9 +19,14 @@ const game = {
       { name: "rare candy", quantity: 99 },
     ],
 }
-  
 
-  // console.log(game)
+// Exercise 1
+// console.dir(pokemon, { maxArrayLength: null })  too long of an object
+
+
+// Exercise 2 
+// console.log(game) 
+
 
 
   /*
@@ -107,33 +112,7 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 Solve Exercise 7 here: 
 */
 
-// console.log(game.party)
-
-// const unevolvedPokemonsArray =[] // array to store starter Pokemons
-// game.party.forEach(el => { // code block to push starter Pokemons from party array to unevolvedPokemonsArray array
-//   if (el.starter === true) {
-//     unevolvedPokemonsArray.push(el)
-//   }
-// })
-
-// // console.log(unevolvedPokemonsArray)
-
-// // this below is to get the pokemon which at 1 number higher position in the pokemon array compared to its unevolved pokemon version
-
-// pokemon[unevolvedPokemonsArray[0].number] // i did 0 and 1 because I know there is only two unevolved Pokemons in the array. I could do for loop too but too much work
-// pokemon[unevolvedPokemonsArray[1].number]
-
-
-// // code below is to store the indices of pokemons that needs to be evolved so that those indices can be used in the splice method later on
-// for (let i = 0; i < game.party.length; i++) {
-//   if (game.party[i].starter) {
-//     let indexOfPokemonsToBeEvolved = []
-//     indexOfPokemonsToBeEvolved.push(i)
-//     // console.log(indexOfPokemonsToBeEvolved)
-//   }
-// }
-
-// game.party.splice(0, 2, unevolvedPokemonsArray )
+// pass
 
 
 
